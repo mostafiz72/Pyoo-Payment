@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyoo Payment system</title>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class=" h-lvh flex justify-center items-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-1">
+                <div class=" text-center font-bold bg-gray-600 py-3 px-8 rounded-xl text-red-100 ">
+                    <h3 id="account-balance" class=" text-3xl">10500</h3>
+                    <p class=" text-gray-400 text-xs">Total amount</p>
+                </div>
+                <!-- 2nd section start here now -->
+                <div class=" grid grid-cols-3 gap-2 my-3">
+                    <button id="transition" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-slate-700 text-white">Transition Details</button>
+                    <button id="blance-added" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-green-500 text-white">Add Money</button>
+                    <button id="side-cash-out-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-yellow-500 text-white">Cash Out</button>
+                </div>
+
+
+
+                <!-- 3rd section start here now -->
+                <div id="add-money-section" class="">
+                    <div class="hero bg-base-200">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+                          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Number</span>
+                                </label>
+                                <input id="input-add-money" type="text" placeholder="Number" class="input input-bordered" required />
+                              </div>
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Password</span>
+                                </label>
+                                <input id="input-pass-money" type="password" placeholder="password" class="input input-bordered" required />
+
+                              </div>
+                              <div class="form-control mt-4">
+                                <button id="btn-add-money" class="btn btn-primary text-white">Add Money</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- 4th section start here now -->
+                <div id="cash-out-section" class="hidden">
+                    <div class="hero bg-base-200">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+                          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Number</span>
+                                </label>
+                                <input id="inputAddMoneyCashOut" type="text" placeholder="Number" class="input input-bordered" required />
+                              </div>
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Password</span>
+                                </label>
+                                <input id="inputPassCashOut" type="password" placeholder="password" class="input input-bordered" required />
+
+                              </div>
+                              <div class="form-control mt-4">
+                                <button id="cash-out" class="btn btn-primary text-white">Cash Out</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div id="transitionInfo" class="hidden">
+                    <h2>Transition Histry:</h2>
+
+                </div>
+                
+                
+
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <script src="js/uitilitis.js"></script>
+    <script src="js/index.js"></script>
+    
+</body>
+</html>
